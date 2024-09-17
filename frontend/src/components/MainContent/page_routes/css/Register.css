@@ -1,0 +1,59 @@
+/* Register.css */
+
+
+.registration-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 32px); 
+    background: linear-gradient(to right bottom, var(--gradient-start), var(--gradient-end));
+}
+
+.register-container {
+    background: rgba(255, 255, 255, 0.8); 
+    color: var(--text-color);
+    padding: 40px 20px;
+    border-radius: 8px;
+    padding: 40px; 
+    width: 500px; 
+    max-width: 90%; 
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.register-title {
+    font-size: 2rem; 
+    color: grey;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-input {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: var(--feature-bg-color);
+    color: black;
+}
+
+.register-button {
+    background-color: var(--cta-bg-color);
+    color: var(--cta-text-color);
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #1d7874;
+}

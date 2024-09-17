@@ -1,0 +1,40 @@
+.pdf-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color : #00517c;
+  height: calc(100vh - 150px);
+  overflow: hidden;
+  }
+
+  .pdf-viewer {
+  max-height: 100%;
+  box-sizing: border-box;
+  }
+
+.navigation-button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--cta-bg-color);
+  color: var(--cta-text-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
+
+.navigation-button:hover {
+  background-color: #1d7874;
+}
+
+.navigation-button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.navigation-buttons {
+  text-align: center;
+  padding: 10px;
+}

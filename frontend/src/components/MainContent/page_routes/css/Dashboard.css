@@ -1,0 +1,169 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+:root {
+    --gradient-start: #3482db;
+    --gradient-end: #3cacac;
+    --text-color: #ffffff;
+    --cta-bg-color: #7f8c8d;
+    --cta-text-color: #ffffff;
+    --feature-bg-color: rgba(255, 255, 255, 0.1);
+    --feature-text-color: #ffffff;
+    --footer-bg-color: rgba(255, 255, 255, 0.05);
+    --dashboard-bg: linear-gradient(to right bottom, var(--gradient-start), var(--gradient-end));
+}
+
+
+
+.dashboard-page {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 85px);
+    justify-content: center;
+    align-items: center;
+    background: var(--dashboard-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    animation: fadeIn 1s ease-out forwards;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.dashboard {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.dashboard h1, .dashboard h2 {
+    margin: 20px 0;
+    color: var(--text-color);
+}
+
+.dashboard-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: var(--feature-bg-color);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--feature-text-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.progress-container, .progress-bar {
+    height: 40px;
+    border-radius: 20px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+  
+.progress-bar {
+    height: 20px;
+    background-color: var(--gradient-start);
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.ai-metrics h2, p {
+    text-align: center;
+}
+
+.ai-metrics p {
+    font-family: "Udemy Sans","SF Pro Text",-apple-system,BlinkMacSystemFont,Roboto,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: black;
+    font-size: 1.2rem;
+}
+
+.progress-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    position: relative;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 10px 0;
+    height: 40px;
+  }
+  
+  .progress-bar {
+    height: 40px;
+    background-color: black; 
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .progress-bar span {
+    margin: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    line-height: 30px;
+  }
+
+  .progress-label {
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    bottom: 0;
+    text-align: center;
+    z-index: 0; 
+    color: black; 
+    opacity: 0.5; 
+}
+
+  .progress-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #fff; 
+  }
+
+
+.marker-25 { left: 25%; }
+.marker-50 { left: 50%; }
+.marker-75 { left: 75%; }
+
+.label-1 { left: 0; }
+.label-2 { left: 25%; }
+.label-3 { left: 50%; }
+.label-4 { left: 75%; }

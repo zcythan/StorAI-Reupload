@@ -1,0 +1,78 @@
+.user-admin-page {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-admin-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-admin-page .search-user-container .generate-codes-container{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.user-admin-page .search-input {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+
+.user-admin-page .search-button, .user-admin-page .toggle-admin-button {
+  background-color: var(--cta-bg-color); 
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.user-admin-page .toggle-admin-button {
+  background-color: #a72828;
+  margin-top: 10px;
+}
+
+.user-admin-page .search-button:hover, .user-admin-page .toggle-admin-button:hover {
+  opacity: 0.85;
+}
+
+.user-admin-page .user-details {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.user-admin-page .user-details h3,
+.user-admin-page .user-details p,
+.user-admin-page .user-details ul,
+.user-admin-page .user-details li {
+  color: #555;
+  line-height: 1.6;
+}
+
+.user-admin-page .user-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-admin-page .user-details li::before {
+  content: "•";
+  color: #00ff00;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

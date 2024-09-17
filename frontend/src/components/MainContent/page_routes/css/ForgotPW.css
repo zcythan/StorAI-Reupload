@@ -1,0 +1,71 @@
+.forgot-pw-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--navbar-height));
+    background: linear-gradient(to right bottom, var(--gradient-start), var(--gradient-end));
+}
+
+.forgot-pw-container {
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--text-color);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forgot-pw-message {
+    color: black;
+}
+
+.forgot-pw-title {
+    font-size: 2rem;
+    color: grey;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-pw-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: black;
+}
+
+.forgot-pw-input,
+.forgot-pw-button {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.forgot-pw-input {
+    background-color: var(--feature-bg-color);
+    color: black;
+}
+
+.forgot-pw-button {
+    background-color: var(--cta-bg-color);
+    color: var(--cta-text-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.forgot-pw-button:hover {
+    background-color: #1d7874;
+}
+
+.forgot-pw-textarea {
+    height: 100px;
+    resize: vertical;
+}

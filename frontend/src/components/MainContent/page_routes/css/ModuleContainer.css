@@ -1,0 +1,99 @@
+.combined-viewer {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - var(--navbar-height));
+  align-items: stretch;
+  background: linear-gradient(to right bottom, var(--gradient-start), var(--gradient-end));
+  margin-top: 0px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.styled-container {
+  box-sizing: border-box;
+  border: 10px solid #ffffff;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.PDFViewer, .VideoPlayer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.file-viewer {
+  flex: 1;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  padding: 10px;
+  background-color: var(--feature-bg-color);
+  height: auto;
+}
+
+.navigation-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--cta-bg-color);
+  color: var(--cta-text-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-button:hover {
+  background-color: var(--hover-effect-color);
+}
+
+.skip-button-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.file-viewer::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.react-pdf__Page__textContent {
+  display: none;
+}
+
+.react-pdf__Page__annotations {
+  display: none;
+}
+
+.file-viewer::-webkit-scrollbar-track {
+  background: transparent;
+}
+.file-viewer::-webkit-scrollbar-thumb {
+  background-color: var(--cta-bg-color);
+  border-radius: 4px;
+}
+.file-viewer::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-effect-color);
+}
+
+.file-viewer {
+  scrollbar-width: thin;
+  scrollbar-color: var(--cta-bg-color) transparent;
+}
+
+.file-frame {
+  width: 100%;
+  height: 100%;
+}

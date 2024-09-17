@@ -1,0 +1,62 @@
+
+.DS_Store
+backend/node_modules/
+frontend/node_modules/
+frontend/build/
+/.pnp
+.pnp.js
+
+# testing
+frontend/coverage
+
+# production
+
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+backend/.env
+*.development
+*.production
+backend/ecosystem.config.js
+backend/userserver.config.js
+backend/aiserver.config.js
+*.pdf
+backend/emailserver.config.js
+frontend/public/mod/intro-vid.m4v
+frontend/public/mod/sweet-spot.m4a
+frontend/public/mod/sal-negotiate.mp4
+frontend/public/mod/interview-tips.mp4
+frontend/public/mod.zip
+*webp
+/frontend/public/mod
+/files
+backend/actionserver.config.js
+/mod
+frontend/2.1.4
+/backend/vectorize/node_modules
+/backend/vector_database.hnsw
+/backend/training
+/backend/vector_database
+/backend/training-myres
+/backend/myres_database
+backend/vector_database.zip
+backend/training-myres.zip
+backend/myres_database.zip
+backend/training.zip
+/backend/training zips
+backend/I Inc Work Book (1).txt
+/backend/vector_database_old
+frontend/public/favicon.ico
+frontend/public/logo192.png
+frontend/public/logo512.png
+frontend/README.md
+frontend/src/components/MainContent/page_routes/images/logo.png
+frontend/src/logo.svg
